@@ -1,24 +1,28 @@
 # Loan Approval Analysis
 
 ## Project Overview
-This project focuses on analyzing loan application data to understand loan approval patterns and explore the factors associated with loan approval status.
+This project analyzes loan application data to explore loan approval patterns and identify applicant characteristics associated with approval outcomes.
 
-The goal is to use data analysis and visualization to identify patterns in applicant characteristics and loan outcomes.
+Using Python and Power BI, the project examines the dataset through data quality checks, exploratory data analysis (EDA), and visualizations.
 
 ## Objectives
-- Understand the distribution of approved and rejected loan applications.
-- Explore applicant and financial characteristics in the dataset.
-- Perform data quality checks and clean the data if required.
-- Conduct exploratory data analysis (EDA).
-- Create visualizations to identify patterns associated with loan approval.
-- Summarize findings based on the analysis.
+- Analyze the distribution of approved and rejected loan applications.
+- Explore applicant demographics and financial characteristics.
+- Check data quality, including missing values and duplicate records.
+- Perform exploratory data analysis (EDA).
+- Visualize patterns associated with loan approval status.
+- Summarize key findings and conclusions.
 
 ## Dataset
 The dataset used in this project is available on Kaggle:
 
 [Loan Approval Classification Dataset](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data)
 
-The dataset contains loan application records and related applicant information for exploring loan approval outcomes.
+The dataset contains 45,000 loan application records and 14 columns describing applicant characteristics, financial information, credit history, and loan status.
+
+The target variable is `loan_status`:
+- `0` — Loan Rejected
+- `1` — Loan Approved
 
 ## Tools and Technologies
 - Python
@@ -31,35 +35,33 @@ The dataset contains loan application records and related applicant information 
 
 ## Project Workflow
 1. **Data Loading:** Load the dataset into Python.
-2. **Data Inspection:** Review the dataset structure, column names, data types, and dimensions.
-3. **Data Quality Checks:** Check for missing values, duplicate records, and potential data inconsistencies.
-4. **Data Cleaning:** Apply appropriate cleaning steps if required.
-5. **Exploratory Data Analysis (EDA):** Examine loan approval patterns and applicant characteristics.
-6. **Data Visualization:** Use charts and plots to communicate key patterns.
-7. **Findings and Conclusion:** Summarize the results and discuss possible implications.
+2. **Data Inspection:** Examine dataset dimensions, column names, and data types.
+3. **Data Quality Checks:** Check for missing values and duplicate records.
+4. **Exploratory Data Analysis:** Analyze loan approval outcomes and applicant characteristics.
+5. **Data Visualization:** Create charts to explore patterns and distributions.
+6. **Findings and Conclusion:** Summarize observations from the analysis.
 
 ## Project Files
-- `loan_data.csv` — dataset file.
-- `Loan_Approval_Analysis.ipynb` — Python notebook for data inspection, analysis, and visualization.
-- `Loan_Approval_Analysis.pbix` — Power BI dashboard, if created and uploaded.
+- `loan_data.csv` — Dataset file.
+- `Loan_Approval_Analysis.ipynb` — Python notebook containing data inspection, analysis, and visualizations.
+- `Loan_Approval_Analysis.pbix` — Power BI dashboard, if included in the repository.
+
+*Note: Ensure the filenames above match the files actually uploaded to the repository.*
 
 ## Key Questions
 - What proportion of loan applications are approved or rejected?
-- Which applicant characteristics are associated with loan approval status?
-- What patterns can be observed across the available financial and demographic variables?
-- What insights can be drawn from the exploratory analysis?
+- How do credit scores differ between approved and rejected applications?
+- What income patterns can be observed across loan outcomes?
+- Which applicant characteristics may be associated with loan approval status?
 
 ## Key Findings
-*The dataset contains 45,000 loan applications, with 22.22% approved and 77.78% rejected.
-
-Approved and rejected applications have similar mean and median credit scores.
-
-Rejected applications show higher mean and median applicant incomes than approved applications.
-
-The income distribution contains unusually high values that may require further investigation.*
+- The dataset contains 45,000 loan applications: 22.22% were approved and 77.78% were rejected.
+- Mean and median credit scores were similar for approved and rejected applications.
+- Rejected applications had higher mean and median applicant incomes than approved applications.
+- The maximum recorded income in the rejected group was substantially higher than in the approved group, indicating a value worth investigating further.
 
 ## Conclusion
-This project aims to explore loan approval outcomes through data inspection, exploratory data analysis, and visualization. The final conclusions will be documented after the analysis is complete.
+The analysis identified differences in applicant income between approved and rejected loan applications, while credit score averages were similar. Further exploration of other applicant characteristics may provide additional insights into loan approval patterns.
 
 ## Disclaimer
 This project is intended for educational and analytical purposes. Observed relationships in the data do not necessarily imply causation and should not be interpreted as a definitive basis for real-world lending decisions.
